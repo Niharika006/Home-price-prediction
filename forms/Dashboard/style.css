@@ -620,3 +620,74 @@ body {
 		min-width: 420px;
 	}
 }
+
+
+
+
+
+
+/* ✅ Make Dashboard Cards Responsive */
+@media screen and (max-width: 768px) {
+	#content main .box-info {
+		grid-template-columns: 1fr; /* Stack cards vertically */
+	}
+
+	#content main .box-info li {
+		flex-direction: column;
+		text-align: center;
+		padding: 15px;
+	}
+
+	#content main .box-info li img {
+		width: 80%; /* Make images scale properly */
+		max-width: 250px;
+		height: auto;
+		margin-bottom: 10px;
+	}
+}
+
+/* ✅ Improve Table Responsiveness */
+@media screen and (max-width: 768px) {
+	#content main .table-data {
+		overflow-x: auto;
+		display: block;
+		width: 100%;
+	}
+
+	#content main .table-data .order table {
+		min-width: 600px; /* Allow horizontal scrolling */
+	}
+}
+
+/* ✅ Make To-Do List Items Adapt */
+@media screen and (max-width: 768px) {
+	#content main .table-data .todo .todo-list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#content main .table-data .todo .todo-list li {
+		padding: 10px;
+		text-align: center;
+	}
+
+	#content main .table-data .todo .todo-list li .bx {
+		margin: 5px 0;
+	}
+}
+
+/* ✅ Ensure Navbar Items are Well-Positioned */
+@media screen and (max-width: 576px) {
+	#content nav {
+		padding: 0 10px;
+	}
+
+	#content nav .form-input input {
+		display: none;
+	}
+
+	#content nav form.show .form-input input {
+		display: block;
+		width: 100%;
+	}
+}
