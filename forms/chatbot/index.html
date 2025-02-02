@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Favicons -->
+	<link href="Decor.png" rel="icon" sizes="180x180">
+	<link href="Decor.png" rel="apple-touch-icon">
+	<!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<title>ChatBot</title>
+</head>
+<body>
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<img src="logo.png" alt="hire ai" style="max-height: 80px;">
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="../Dashboard/index.html">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="../chatbot/index.html">
+					<i class='bx bx-chat'></i>
+					<span class="text">ChatBot</span>
+				</a>
+			</li>
+			<li>
+				<a href="../house_price_prediction/index.html">
+					<i class='bx bx-building-house'></i>
+					<span class="text">HousePrice-Prediction</span>
+				</a>
+			</li>
+			<br><br><br>
+			<li>
+				<a href="/index.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- CONTENT -->
+	<!-- MAIN CONTENT -->
+<section id="content">
+    <!-- NAVBAR -->
+    <nav>
+        <i class='bx bx-menu'></i>
+        <form action="#">
+            <div class="form-input">
+                <input type="search" placeholder="Search...">
+                <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+            </div>
+        </form>
+        <a href="#" class="notification">
+            <i class='bx bxs-bell'></i>
+            <span class="num">8</span>
+        </a>
+        
+    </nav>
+    <!-- MAIN CONTENT -->
+    <div class="iframe-container">
+        <iframe
+            src="https://krish30-house-ai.hf.space"
+            frameborder="0"
+            class="fullscreen-iframe"
+        ></iframe>
+
+    </div>
+</section>
+
+	
+	<script src="script.js" defer></script>
+</body>
+</html>

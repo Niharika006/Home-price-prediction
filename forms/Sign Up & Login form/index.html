@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In and Login Form</title>
+
+    <!-- Favicons -->
+	<link href="Decor.png" rel="icon" sizes="180x180">
+	<link href="Decor.png" rel="apple-touch-icon">
+
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6062b40ee2.js" crossorigin="anonymous"></script>
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        // Import Firebase SDK
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+        import { getAuth } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
+
+        // Your Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBHMynCLkdrg-a4r8pHg8dr59sYsEq54Mk",
+            authDomain: "house-price-prediction-7ca89.firebaseapp.com",
+            projectId: "house-price-prediction-7ca89",
+            storageBucket: "house-price-prediction-7ca89.appspot.com",
+            messagingSenderId: "898100168116",
+            appId: "1:898100168116:web:856b8f7869b4cdfaf75ee1",
+            measurementId: "G-56239BRPSZ"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="form-box">
+        <h1 id="title">Sign Up</h1>
+        <form id="authForm">
+            <div class="input-group">
+                <div class="input-field" id="nameField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <p>Lost password? <a href="#" id="resetPassword">Click Here!</a></p>
+            </div>
+            <div class="btn-field">
+                <button type="button" id="signupBtn">Sign Up</button>
+                <button type="button" id="signinBtn" class="disable">Sign In</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="script.js" type="module"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In and Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6062b40ee2.js" crossorigin="anonymous"></script>
+
+    Favicons
+    <link href="logo2.png" rel="icon">
+    <link href="logo2.png" rel="apple-touch-icon">
+</head> -->
+<!-- <body>
+<div class="container">
+    <div class="form-box">
+        <h1 id="title">Sign Up</h1>
+        <form>
+            <div class="input-group">
+                <div class="input-field" id="nameField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <p>Lost password <a href="#">Click Here!</a></p>
+            </div>
+            <div class="btn-field">
+                <button type="button" id="signupBtn"><a href="../Dashboard/index.html">Sign up</a></button>
+                <button type="button" id="signinBtn" class="disable"><a href="../Dashboard/index.html">Sign in</a></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html> -->
+
+
+
